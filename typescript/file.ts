@@ -12,20 +12,20 @@ declare let exports: any;
 
 const fs = require('fs');
 
-exports.readFile = function(nameFile, callback) {
-    fs.readFile(nameFile, function(err, data) {
+exports.readFile = function(nameFile: string, callback: any) {
+    fs.readFile(nameFile, function(err: any, data: any) {
         callback(data, err);
     });
 }
 
-exports.appendFile = function(nameFile, contentFile, callback) {
+exports.appendFile = function(nameFile: string, contentFile: any, callback: any) {
     fs.appendFile(nameFile, contentFile, callback);
 }
 
-exports.openFile = function(nameFile, param, callback) {
+exports.openFile = function(nameFile: string, param: any, callback: any) {
     fs.open(nameFile, param, callback);
 }
 
-exports.writeFile = function(nameFile, contentFile, callback) {
+exports.writeFile = function(nameFile: string, contentFile: any, callback: any) {
     fs.writeFile(nameFile, contentFile, callback);
 }
