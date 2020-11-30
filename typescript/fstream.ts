@@ -13,16 +13,16 @@ declare let exports: any;
 const fs = require('fs');
 
 class Fstream {
-    constructor(_0x01) {
+    constructor(_0x01: any) {
         this.nameFile = _0x01;
     }
-    writeFile(contentFile, callback) {
+    writeFile(contentFile: any, callback: any) {
         fs.writeFile(this.nameFile, contentFile, callback);
     }
-    openFile(param, callback) {
+    openFile(param: any, callback: any) {
         fs.open(this.nameFile, param, callback);
     }
-    appendFile(contentFile, callback) {
+    appendFile(contentFile: any, callback: any) {
         fs.appendFile(this.nameFile, contentFile, callback);
     }
 }
