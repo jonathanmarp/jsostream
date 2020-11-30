@@ -12,7 +12,7 @@ declare let exports: any;
 
 const process = require('process');
 
-exports.jsostream = function(callback) {
+exports.jsostream = function(callback: any) {
     try {
         callback(process.argv.length, process.argv);
     } catch (err) {
